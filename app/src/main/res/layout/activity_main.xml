@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chesscom_black_light"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your\nHorshees.com account"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <ImageView
+        android:id="@+id/knightLogo"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createText"
+        app:srcCompat="@drawable/knight_512" />
+
+
+    <Button
+
+        android:id="@+id/signUpbutton"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:text="Sign Up with Neigh-mail"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="282dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/knightLogo"/>
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------   OR   -----------------------------------"
+        android:textColor="@color/spotify_gray_light"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpbutton"
+        app:layout_constraintVertical_bias="0.02" />
+
+
+    <Button
+        android:id="@+id/appleButton"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:text="🍎  Continue with Hay-pple"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:backgroundTint="@color/chesscom_black_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orText"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/googleButton"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:text="🏇  Continue with Galloop"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:backgroundTint="@color/chesscom_black_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appleButton"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:text="🐴  Continue with Foalbook"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:backgroundTint="@color/chesscom_black_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleButton"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_marginTop="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
